@@ -1,0 +1,46 @@
+body {
+	color: navy;
+	font-size: 26px;
+	font-family: Bell MT;
+}
+
+#contenedor {
+	width: 50%;
+	margin: auto;
+	background: radial-gradient(blue,red);
+	text-align: center;
+	padding: 10px 5px;
+	border-radius: 10px;
+}
+
+input[type="radio"] { display: none; }
+
+label {
+	margin: 0px 10px;
+	cursor: pointer;
+}
+
+#elementos { margin-top: 20px; }
+
+img {
+	margin: 5px;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px black;
+}
+
+#contenedor #celulares:checked ~ #elementos .laptop,
+#contenedor #celulares:checked ~ #elementos .consola {
+	display: none;
+}
+
+
+#contenedor #laptops:checked ~ #elementos .celular,
+#contenedor #laptops:checked ~ #elementos .consola {
+	display: none;
+}
+
+#contenedor #consolas:checked ~ #elementos .laptop,
+#contenedor #consolas:checked ~ #elementos .celular {
+	display: none;
+}
+
